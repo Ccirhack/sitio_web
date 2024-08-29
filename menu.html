@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from yevgenysim-turkey.github.io/touche/menu.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Aug 2024 01:00:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="assets/favicon/manifest.json" />
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="assets/css/libs.bundle.css" />
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/css/theme.bundle.css" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Map -->
+    <link rel="stylesheet" href="../../api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" />
+    
+    <!-- 
+      Color mode switch
+      - For demonstration purposes only
+      - If you do not have the possibility to store user preferences on the backend, I highly recommend switching to a media query implementation: https://getbootstrap.com/docs/5.3/customize/color-modes/#building-with-sass
+    -->
+    <script>
+      (() => {
+        window.addEventListener('DOMContentLoaded', () => {
+          const colorModeSwitch = document.getElementById('colorModeSwitch');
+          if (colorModeSwitch) {
+            colorModeSwitch.addEventListener('change', () => {
+              document.body.setAttribute('data-bs-theme', colorModeSwitch.checked ? 'dark' : 'light');
+            });
+          }
+        });
+      })();
+    </script>
+    
+    <!-- Title -->
+    <title>Via Via - Café &amp; Restaurant</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark navbar-expand-lg navbar-togglable fixed-top">
+      <div class="container">
+        <!-- Navbar brand (mobile) -->
+        <a class="navbar-brand d-lg-none" href="index.html">Via Via</a>
+    
+        <!-- Navbar toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Navbar collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <!-- Navbar nav -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " href="about-us.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="reservation.html">Reservaciones</a>
+            </li>
+          </ul>
+    
+          <!-- Navbar brand -->
+          <a class="navbar-brand d-none d-lg-flex mx-lg-auto" href="index.html"> Via Via </a>
+    
+          <!-- Navbar nav -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " href="news-and-events.html">Noticias y Eventos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="gallery.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="contact-us.html">Contactanos</a>
+            </li>
+          </ul>
+    
+          <!-- Color mode -->
+          <div class="form-check form-switch form-switch-color-mode ms-lg-3">
+            <input class="form-check-input" type="checkbox" role="switch" id="colorModeSwitch" />
+            <label class="form-check-label" for="colodeModeSwitch"></label>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header data-jarallax data-speed=".8" style="background-image: url(assets/img/25.jpg)">
+      <div class="pt-10 pb-8 pt-md-15 pb-md-13 bg-black bg-opacity-50">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6 text-center">
+              <!-- Heading -->
+              <h1 class="display-6 fw-bold text-white">Nuestro Menu</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MENU -->
+    <!-- MENU -->
+    <section class="py-7 py-md-9 border-bottom">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+            <!-- Heading -->
+            <h2 class="mb-2">Menu</h2>
+
+            <!-- Subheading -->
+            <p class="mb-6">
+              Buena vista y buena comida. Tienen platos innovadores que van de acuerdo a la región.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <!-- Navigation -->
+            <div class="nav justify-content-center mb-6" id="menuTabs" role="tablist">
+              <a class="nav-link active" id="mainsTab" data-bs-toggle="tab" href="#mains" role="tab" aria-controls="mains" aria-selected="true"> Mains </a>
+              <a class="nav-link" id="lunchTab" data-bs-toggle="tab" href="#lunch" role="tab" aria-controls="lunch"> Almuerzo </a>
+              <a class="nav-link" id="dinnerTab" data-bs-toggle="tab" href="#dinner" role="tab" aria-controls="dinner"> Cena </a>
+              <a class="nav-link" id="drinksTab" data-bs-toggle="tab" href="#drinks" role="tab" aria-controls="drinks"> Bebidas </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <!-- Content -->
+            <div class="tab-content" id="menuContent">
+              <div class="tab-pane fade show active" id="mains" role="tabpanel" aria-labelledby="mainsTab">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/26.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">Hamburguesa de Carne</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">Pan para hamburguesa
+                            Carne molida para la Hamburguesa,
+                            Queso,
+                            Lechuga,
+                            Tomate,
+                            Cebolla,
+                            Pepinillos,
+                            Ketchup,
+                            Mostaza,
+                            Mayonesa y
+                            Tocino</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">$15</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/27.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">Donas</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">Masa de trigo con glaseado o decoración:
+                            Azúcar, glas,
+                            Agua o leche,
+                            Esencia de vainilla,
+                            Chocolate derretido y
+                            Chispas de colores o toppings al gusto</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">$23</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/28.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">Pan frances</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">Harina de trigo
+                            Agua,
+                            Levadura,
+                            Sal,
+                            Azúcar y
+                            Mantequilla</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">$16</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/huevo.jpeg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">Arroz a la cubana</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">Arroz blanco
+                            Plátano maduro,
+                            Huevos y
+                            Salsa de tomate (ketchup o tomate frito)
+                            </p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">$15</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/30.png" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">Ceviche</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">Pescado fresco (merluza, corvina, tilapia, etc.)
+                            Limones,
+                            Cebolla morada,
+                            Cilantro fresco,
+                            Ají o chile,
+                            Sal,
+                            Pimienta,
+                            Camote,
+                            Choclo y
+                            Lechuga</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">$23</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/tamales.jpeg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">Tamales</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">Harina de maíz,
+                            Caldo,
+                            Manteca de cerdo,
+                            Sal,
+                            Polvo para hornear,
+                            Carne de cerdo, pollo o res,
+                            Salsa roja o verde,
+                            Chiles o especias,
+                            Vegetales (zanahoria, papa, aceitunas)</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">$16</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="lunch" role="tabpanel" aria-labelledby="lunchTab">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/lomo.jpeg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">Lomo Saltado</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">Carne de res,
+                            Cebolla morada,
+                            Tomate,
+                            Pimiento,
+                            Papas,
+                            Ajo,
+                            Vinagre,
+                            Salsa de soya,
+                            Cilantro fresco,
+                            Ají amarillo,
+                            Aceite,
+                            Sal y pimienta.</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">$23</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/aji.jpeg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">Ají de Gallina</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">Pechuga de pollo,
+                            Pan blanco,
+                            Leche evaporada,
+                            Cebolla,
+                            Ajo,
+                            Ají amarillo,
+                            Nueces o maní,
+                            Queso parmesano,
+                            Papas hervidas.
+                            Huevos duros.
+                            Aceitunas negras y
+                            Arroz blanco</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">$15</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/causa.jpeg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">Causa Limeña</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">Papas amarillas
+                            Ají amarillo,
+                            Limón,
+                            Aceite,
+                            Sal y pimienta,
+                            Pollo desmenuzado o atún,
+                            Mayonesa,
+                            Cebolla picada,
+                            Palta,
+                            Huevos duros y
+                            Aceitunas negras</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">$15</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/arroz.jpeg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">Arroz con Pollo</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">Pollo,
+                            Arroz,
+                            Cebolla,
+                            Ajo,
+                            Ají amarillo,
+                            Culantro,
+                            Choclo,
+                            Zanahoria,
+                            Guisantes,
+                            Pimiento,
+                            Caldo de pollo,
+                            Cerveza,
+                            Aceite,
+                            Sal y pimienta</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">$16</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/tallarines.jpeg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">Tallarines a la Huancaína</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">Para los tallarines:
+
+                            Tallarines,
+                            Ají amarillo,
+                            Queso fresco,
+                            Leche evaporada,
+                            Galletas saladas,
+                            Cebolla,
+                            Ajo,
+                            Sal y pimienta
+                            Para acompañar:
+                            
+                            Huevos duros,
+                            Aceitunas negras y
+                            Lechuga.</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">$16</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/aguadito.jpeg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">Aguadito</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">Pollo,
+                            Arroz,
+                            Cebolla,
+                            Ajo,
+                            Ají amarillo,
+                            Culantro,
+                            Papa,
+                            Zanahoria,
+                            Pimiento,
+                            Caldo de pollo,
+                            Sal y pimienta,
+                            Aceite,
+                            Guisantes y
+                            Choclo</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">$23</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="dinner" role="tabpanel" aria-labelledby="dinnerTab">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/pollo.jpg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">Pollo a la brasa</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">Pollo entero (o piezas),
+                            Ajo,
+                            Pimentón (paprika),
+                            Comino,
+                            Sal,
+                            Pimienta,
+                            Vinagre,
+                            Aceite,
+                            Salsa de soja,
+                            Cerveza (opcional, para marinar)</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">$16</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/pizza.jpeg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">Pizza</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">Masa para pizza (harina, agua, levadura, aceite, sal),
+                            Salsa de tomate,
+                            Queso mozzarella,
+                            Ingredientes para el topping (como pepperoni, jamón, champiñones, pimientos, cebolla, etc.)</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">$15</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/mazamorra.jpeg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">Mazamorra</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">Maíz morado,
+                            Azúcar,
+                            Canela,
+                            Clavos de olor,
+                            Frutas secas (como pasas, opcional),
+                            Piel de limón o naranja (opcional).</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">$15</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/salchi.jpeg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">Salchipapa</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">Salchichas,
+                            Papas (para freír),
+                            Aceite (para freír) y
+                            Salsa (como ketchup, mayonesa, o salsa de ají)</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">$23</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/broaster.jpeg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">Broaster</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">Pollo (en piezas),
+                            Harina,
+                            Polvo de hornear,
+                            Especias (como pimentón, ajo en polvo, cebolla en polvo, sal, pimienta),
+                            Huevos,
+                            Leche,
+                            Aceite (para freír)</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">$23</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/anticu.jpeg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">Anticuchos</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">Carne de res (como corazón o lomo, cortada en trozos),
+                            Ají panca (en pasta o seco),
+                            Ajo,
+                            Vinagre,
+                            Comino,
+                            Sal y pimienta,
+                            Palitos de brocheta</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">$16</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="drinks" role="tabpanel" aria-labelledby="drinksTab">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/chilcano.jpeg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">Chilcano</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">Pisco,
+                            Ginger ale (refresco de jengibre),
+                            Jugo de limón,
+                            Hielo,
+                            Rodaja de limón (para decorar) y
+                            Amargo de angostura (opcional)</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">$15</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/pisco.jpeg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">Pisco Sour</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">Pisco,
+                            Jugo de limón,
+                            Azúcar,
+                            Clara de huevo,
+                            Hielo y
+                            Amargo de angostura (opcional)</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">$23</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/destor.jpeg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">Destornillador:</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">Vodka,
+                            Jugo de naranja,
+                            Hielo y
+                            Rodaja de naranja (para decorar)</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">$15</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/mojito.jpeg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">Mojito</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">Ron blanco,
+                            Azúcar (o jarabe de azúcar),
+                            Jugo de limón,
+                            Menta fresca,
+                            Agua con gas (o soda) y
+                            Hielo</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">$23</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/laguna.jpeg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">Laguna Azul</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">Vodka,
+                            Curaçao azul,
+                            Jugo de piña,
+                            Jugo de limón,
+                            Hielo y
+                            Rodaja de limón o cereza (para decorar)</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">$16</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="py-3 border-bottom">
+                      <div class="row">
+                        <div class="col-3 align-self-center">
+                          <!-- Image -->
+                          <div class="ratio ratio-1x1">
+                            <img class="object-fit-cover" src="assets/img/cuba.jpeg" alt="..." />
+                          </div>
+                        </div>
+                        <div class="col-7">
+                          <!-- Heading -->
+                          <h5 class="mb-2">Cuba Libre</h5>
+
+                          <!-- Text -->
+                          <p class="mb-0">Ron blanco,
+                            Coca-Cola,
+                            Jugo de limón,
+                            Hielo y
+                            Rodaja de limón (para decorar)</p>
+                        </div>
+                        <div class="col-2">
+                          <!-- Price -->
+                          <div class="fs-4 font-serif text-center text-body-emphasis">$16</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISHES -->
+    <section class="py-7 py-md-9 overflow-hidden">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+            <!-- Heading -->
+            <h2 class="mb-2">Nuestras <em>comidas</em> ayacuchanas</h2>
+
+            <!-- Subheading -->
+            <p class="mb-6">
+              Platos típicos de la región de ayacucho, con gran diversidad
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <!-- Slider -->
+            <div class="flickity-viewport-visible" data-flickity='{"cellAlign": "left", "contain": true, "imagesLoaded": true, "pageDots": false}'>
+              <div class="w-100 px-2" style="max-width: 320px">
+                <!-- Card -->
+                <div class="card border-0">
+                  <!-- Image -->
+                  <img class="card-img-top" src="assets/img/cabeza.jpg" alt="..." />
+
+                  <!-- Body -->
+                  <div class="card-body">
+                    <!-- Heading -->
+                    <div class="row mb-2">
+                      <div class="col">
+                        <h5 class="mb-0">Caldo de cabeza</h5>
+                      </div>
+                      <div class="col-auto">
+                        <span class="fs-4 font-serif text-body-emphasis">$15</span>
+                      </div>
+                    </div>
+
+                    <!-- Text -->
+                    <p class="mb-0">Con la cabeza del carnero se prepara un caldo en Ayacucho que tiene fama en todo el Perú. El caldo de cabeza es uno de los más energizantes desayunos de los huamanguinos.
+
+                      Se prepara con la cabeza del carnero, con papas, arroz y sal al gusto. Se sirve con yerbabuena, mote y yuca.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-100 px-2" style="max-width: 320px">
+                <!-- Card -->
+                <div class="card border-0">
+                  <!-- Image -->
+                  <img class="card-img-top" src="assets/img/puca.jpg" alt="..." />
+
+                  <!-- Body -->
+                  <div class="card-body">
+                    <!-- Heading -->
+                    <div class="row mb-2">
+                      <div class="col">
+                        <h5 class="mb-0">Puca Picante</h5>
+                      </div>
+                      <div class="col-auto">
+                        <span class="fs-4 font-serif text-body-emphasis">$18</span>
+                      </div>
+                    </div>
+
+                    <!-- Text -->
+                    <p class="mb-0">Uno de los platillos emblemas de la cocina ayacuchana es la Puca Picante. Guiso escarlata, perfumado con las especies tradicionales en los fogones peruanos.
+
+                      Se prepara con trozos de chancho, papa pequeña, maní tostado y molido y beterraga que le da su típico color. 
+                      
+                      </p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-100 px-2" style="max-width: 320px">
+                <!-- Card -->
+                <div class="card border-0">
+                  <!-- Image -->
+                  <img class="card-img-top" src="assets/img/muyuchi.jpg" alt="..." />
+
+                  <!-- Body -->
+                  <div class="card-body">
+                    <!-- Heading -->
+                    <div class="row mb-2">
+                      <div class="col">
+                        <h5 class="mb-0">Muyuchi</h5>
+                      </div>
+                      <div class="col-auto">
+                        <span class="fs-4 font-serif text-body-emphasis">$23</span>
+                      </div>
+                    </div>
+
+                    <!-- Text -->
+                    <p class="mb-0">La técnica de fabricación de un buen helado implica batir la leche a velocidad media sobre una fuente fría, para que tome textura y baje su temperatura sin crear cristales.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-100 px-2" style="max-width: 320px">
+                <!-- Card -->
+                <div class="card border-0">
+                  <!-- Image -->
+                  <img class="card-img-top" src="assets/img/pachamanca.jpg" alt="..." />
+
+                  <!-- Body -->
+                  <div class="card-body">
+                    <!-- Heading -->
+                    <div class="row mb-2">
+                      <div class="col">
+                        <h5 class="mb-0">Pachamanca ayacuchana</h5>
+                      </div>
+                      <div class="col-auto">
+                        <span class="fs-4 font-serif text-body-emphasis">$32</span>
+                      </div>
+                    </div>
+
+                    <!-- Text -->
+                    <p class="mb-0">La carne de res, pollo, chancho y cuy se cocina en la tierra, entre piedras precalentadas.
+
+                      El sabor y el aroma del huacatay, el chincho y ajíes de diversas clases le dan el toque típicamente peruano. El choclo, la papa y el camote también se cocinan junto a la carne. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-100 px-2" style="max-width: 320px">
+                <!-- Card -->
+                <div class="card border-0">
+                  <!-- Image -->
+                  <img class="card-img-top" src="assets/img/mondongo.jpeg" alt="..." />
+
+                  <!-- Body -->
+                  <div class="card-body">
+                    <!-- Heading -->
+                    <div class="row mb-2">
+                      <div class="col">
+                        <h5 class="mb-0">Mondongo</h5>
+                      </div>
+                      <div class="col-auto">
+                        <span class="fs-4 font-serif text-body-emphasis">$15</span>
+                      </div>
+                    </div>
+
+                    <!-- Text -->
+                    <p class="mb-0">Una sopa de amplia preparación, que comienza a cocinarse desde la noche anterior a su consumo, con un largo hervido de la panza de res.
+
+                      También lleva carne de res y de carnero, maíz pelado, yerbabuena y ají panca molido. 
+                      </p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-100 px-2" style="max-width: 320px">
+                <!-- Card -->
+                <div class="card border-0">
+                  <!-- Image -->
+                  <img class="card-img-top" src="assets/img/pcuhero.jpeg" alt="..." />
+
+                  <!-- Body -->
+                  <div class="card-body">
+                    <!-- Heading -->
+                    <div class="row mb-2">
+                      <div class="col">
+                        <h5 class="mb-0">Puchero</h5>
+                      </div>
+                      <div class="col-auto">
+                        <span class="fs-4 font-serif text-body-emphasis">$42</span>
+                      </div>
+                    </div>
+
+                    <!-- Text -->
+                    <p class="mb-0">También con una gran cantidad de energía, el puchero ayacuchano es una sopa con una variedad de ingredientes: carne seca de res o carnero, tocino de chancho, garbanzos, choclo, col, yuca, papas, manzana, durazno y chuño. Se sirve con ají colorado.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESERVATION -->
+    <section class="py-7 py-md-9 bg-light" id="reservation">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+            <!-- Heading -->
+            <h2 class="mb-2">Hacer reserva en línea</h2>
+
+            <!-- Subheading -->
+            <p class="mb-6">Ingrese sus datos para hacer las reservaciones</p>
+          </div>
+        </div>
+        <div class="row justify-content-lg-center">
+          <div class="col-lg-8">
+            <!-- Form -->
+            <form>
+              <div class="row gx-3">
+                <div class="col-md-6">
+                  <!-- Contact number (hidden) -->
+                  <input type="hidden" name="contact_number" />
+
+                  <!-- Full name -->
+                  <div class="mb-3">
+                    <label class="visually-hidden" for="user_name">Nombre Completo</label>
+                    <input class="form-control" id="user_name" name="user_name" type="text" placeholder="Full name" required />
+                  </div>
+
+                  <!-- Phone number -->
+                  <div class="mb-3">
+                    <label class="visually-hidden" for="user_phone">Número Telefónico</label>
+                    <input class="form-control" id="user_phone" name="user_phone" type="tel" placeholder="Phone number" required />
+                  </div>
+
+                  <!-- Email address -->
+                  <div class="mb-3">
+                    <label class="visually-hidden" for="user_email">Dirección de Email</label>
+                    <input class="form-control" id="user_email" name="user_email" type="email" placeholder="Email address" required />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <!-- Guests -->
+                  <div class="mb-3">
+                    <label class="visually-hidden" for="guests">Guests</label>
+                    <select class="form-select" id="guests" name="guests" required>
+                      <option value="1">1 person</option>
+                      <option value="2" selected="">2 persons</option>
+                      <option value="3">3 persons</option>
+                      <option value="4">4 persons</option>
+                      <option value="5">5 persons</option>
+                    </select>
+                  </div>
+
+                  <!-- Date -->
+                  <div class="mb-3">
+                    <label class="visually-hidden" for="date">Date</label>
+                    <input class="form-control" id="date" name="date" type="date" value="2021-02-12" required />
+                  </div>
+
+                  <!-- Time -->
+                  <div class="mb-3">
+                    <label class="visually-hidden" for="time">Time</label>
+                    <input class="form-control" id="time" name="time" type="time" value="18:00" required />
+                  </div>
+                </div>
+                <div class="col text-center">
+                  <!-- Button -->
+                  <button class="btn btn-outline-primary" type="submit">Reservar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- FOOTER -->
+     <footer class="py-7 py-md-9 bg-black">
+      <div class="container px-4">
+        <div class="row gx-7">
+          <div class="col-sm-4">
+            <!-- Heading -->
+            <h5 class="text-xs text-primary">Sobre Nosotros</h5>
+    
+            <!-- Text -->
+            <p class="mb-6">
+              ViaVia Ayacucho ! Ubicados en la Plaza de Armas te ofrecemos una vista panorámica y única con una carta con platos hechos con insumos locales como la quinua y trucha y unos platos del mundo como nuestro estofado belga.
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <!-- Heading -->
+            <h5 class="text-xs text-primary">Contact info</h5>
+    
+            <!-- List -->
+            <ul class="list-unstyled mb-6">
+              <li class="d-flex mb-2">
+                <div class="fas fa-map-marker-alt me-3 mt-2 fs-sm"></div>
+                Portal Costitucion 4 Plaza de Armas, Ayacucho Perú
+                
+              </li>
+              <li class="d-flex mb-2">
+                <div class="fas fa-phone me-3 mt-2 fs-sm"></div>
+                +51 66 780199
+              </li>
+              <li class="d-flex">
+                <div class="far fa-envelope me-3 mt-2 fs-sm"></div>
+                <a href="mailto:admin@domain.com">admin@domain.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <!-- Heading -->
+            <h5 class="text-xs text-primary">Horas de Atención</h5>
+    
+            <!-- Text -->
+            <div class="mb-3">
+              <div class="text-xs">Lunes - Viernes</div>
+              <div class="font-serif">10:00 AM - 11:00 PM</div>
+            </div>
+    
+            <!-- Text -->
+            <div class="mb-6">
+              <div class="text-xs">Sábado - Domingos</div>
+              <div class="font-serif">12:00 AM - 10:00 PM</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <!-- Copyright -->
+            <div class="d-flex align-items-center">
+              <hr class="hr-sm me-3" style="height: 1px" />
+              &copy; 2024 Via Via.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- TOAST -->
+    <div class="toast position-fixed bottom-0 start-50 translate-middle-x mb-3 mb-md-5" id="notification" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body mx-auto"></div>
+      </div>
+    </div>
+
+    <!-- TOAST -->
+    <div class="toast position-fixed bottom-0 start-50 translate-middle-x mb-3 mb-md-5" id="notification" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body mx-auto"></div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <!-- Vendor JS -->
+    <script src="assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="assets/js/theme.bundle.js"></script>
+  </body>
+
+<!-- Mirrored from yevgenysim-turkey.github.io/touche/menu.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Aug 2024 01:00:39 GMT -->
+</html>
